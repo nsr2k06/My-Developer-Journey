@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .container{
+             border: 2px solid black;
+
+            display: grid;
+            
+            /* grid-template-columns: 200px 2fr 1fr; */
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: 1fr 1fr;
+            background-color: aqua;
+            row-gap: 20px;
+            
+        }
+        .h1{
+            text-align:center;
+            text-decoration: underline;
+        }
+
+        .box{border: 2px solid red;
+            background-color: yellow;}
+
+    </style>
+</head>
+<body>
+    <h1 class="h1">Grid Layout</h1>
+    <div class="container">
+        <div class="box">I am The Box <div>
+            
+    </div>
+</body>
+</html>

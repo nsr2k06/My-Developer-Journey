@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Element By Class Name</title>
+    
+</head>
+<body>
+    <div class="container">
+        <div id="BOX1" class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+        <button onclick="magic()">Do the Magic</button>
+    </div>
+
+<script>
+        function magic(){
+            let b1=Array.from(document.getElementsByClassName("box"))
+            b1.innerHTML="Magic Done !"
+            console.log(b1)
+            console.log(b1[0])
+            console.log(b1[1])
+            console.log(b1[2])
+ 
+        // We can use For LOOP as well for doing the Same..
+            
+            for(Element of b1){
+                console.log(Element.innerHTML)
+                Element.innerHTML= "This is "+Element.innerHTML
+            }
+ }
+</script>
+
+</body>
+</html>

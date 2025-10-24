@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    <div class="container">
+        I am a container
+        <form action="">
+            <input id="name" type="text" value="">
+            <input id="submit" type="submit" value="submit">
+    
+        </form>
+    </div>
+
+    <script>
+        // TO SAVE ENTERED DATA....
+        document.getElementsByTagName("form")[0].addEventListener("submit",(e)=>{
+            const value=document.getElementById("name").value;
+            localStorage.setItem("name",value)            
+        })
+
+        // 2ND WAY........
+        // const get =()=>{
+        //     document.getElementById("name").value
+        //     localStorage.getItem("name",value)
+        // }
+
+        // localStorage.clear()
+
+
+    </script>
+</body>
+</html>

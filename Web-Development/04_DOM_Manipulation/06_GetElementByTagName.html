@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Element By Tag Name</title>
+    <style>
+        .aqua{
+            background-color: aqua;
+
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div id="BOX1" class="box">Box1</div>
+            <div class="box">Box2</div>
+            <div class="box">Box3</div>
+            <button onclick="magic()">Do the Magic</button>
+        </div>
+
+        <script>
+                function magic(){
+                    let divs =document.getElementsByTagName("div")
+                    console.log(divs)
+                
+                    for(Element of divs){
+                        Element.classlist.add("aqua")
+                        Element.classlist.remove("box")
+                    }
+                }
+        </script>
+
+</body>
+</html>

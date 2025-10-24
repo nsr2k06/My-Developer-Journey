@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing Content & Styling</title>
+    
+</head>
+<body>
+    <div class="container">
+        <div id="welcome">Welcome to my Form</div>
+        <form action="">
+            <input type="text" id="name" value="admin">
+            <input type="Submit" value="submit">
+        </form>
+    </div>
+
+    <script>
+        const welcome = document.getElementById("welcome")
+        // console.log(welcome)
+        // welcome.innerHTML = "<h1>Enter Your Info</h>"
+        // welcome.textContent="Fill This Form"
+
+        const input =document.getElementById("name")
+        input.value=" NSR IS A GUD BOY !"
+
+        console.log(input.value)
+        welcome.style.backgroundColor="red" //THIS IS CAMEL CASE STYLING CODE !
+        
+
+
+    </script>
+</body>
+</html>

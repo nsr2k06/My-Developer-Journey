@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes & Classes</title>
+    <style> 
+        .Nitin{
+            background-color: aqua;
+            width: 200px;
+            border: 2px solid red;
+            padding: 35px;
+        }
+    </style>
+</head>
+<body>
+       <div class="container">
+        <div id="welcome">Welcome to my Form</div>
+        <form action="">
+            <input type="text" id="name" value="admin">
+            <input type="Submit" value="submit">
+        </form>
+    </div>
+
+    <div class="container">
+        <img id="image" src="pic.jpg" alt="A beautiful scenery" width="200px">
+    </div>
+
+<script>
+    const img = document.getElementById("Image")
+    img.setAttribute("alt", "Sitting Person")
+    
+    img.classList.add("Nitin")
+
+    img.classList.add("ns")
+    
+</script>
+</body>
+</html>

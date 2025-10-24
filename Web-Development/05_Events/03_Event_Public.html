@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 10px;
+           
+        }
+
+        #box1{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="contianer">
+        <div id="box1" class="box">Box1</div>
+        <div id="box2" class="box">Box2</div>
+        <div class="box">Box3</div>
+    </div>
+
+
+    <script>
+        let box1 = document.getElementById("box1")
+        let box2 = document.getElementById("box2")
+
+        document.querySelector(".contianer").addEventListener("click",(e)=>{
+            console.log("Container was Clicked !")
+             console.log(e.target.innertarget)
+        })
+    
+        // box1.addEventListener("click",()=>{
+        //     console.log("Box 1 was Clicked !")
+        // }
+    
+    </script>
+</body>
+</html>

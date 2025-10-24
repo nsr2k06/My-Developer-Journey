@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+    <script>
+        console.log("Functions in JS");
+        console.log("Average of Two Numbers");
+        
+        function avg2num(a,b){
+            let sum=a+b;
+            let avg=sum/2;
+            return avg;
+
+        }
+
+        let a =55;
+        let b=90;
+        console.log(avg2num(a,b))
+        console.log(avg2num(10,20))
+        console.log(avg2num(20,30))
+        console.log(avg2num(30,40))
+        console.log(avg2num(40,50))
+
+
+        console.log("Function Declaration...")
+        function greet(){
+            console.log("Welcome to NSR Learnings...")
+        }
+        greet();
+
+        console.log("Arrow Function...")
+        const square=(num)=>{
+            return num*num;
+        };
+        console.log(square(4));
+
+    </script>
+
+</head>
+<body>
+    <h1>Functions in JS</h1>
+</body>
+</html>

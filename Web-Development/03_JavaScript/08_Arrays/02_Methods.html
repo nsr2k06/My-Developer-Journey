@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+    <script>
+        console.log("Welcome to Array")
+        let arr = [4,67,true,"NSR"]
+        console.log(arr)
+
+        console.log("push ( Adding ) Elements in Array...")
+        arr.push(100)
+        console.log(arr)
+
+        console.log("pop  ( Remove )Elements in Array...")
+        arr.pop()
+        console.log(arr)
+
+        console.log("Remove First Elements in Array...")
+        arr.shift()
+        console.log(arr)
+
+        console.log("Add at First Position in Array...")
+        arr.unshift(100)
+        console.log(arr)
+        
+        console.log("Traversing Array using (for loop)")
+        let array=[2,4,6,8,10]
+        for (let index = 0; index < array.length; index++) {
+            const element = array[index];
+            console.log(element)
+        }
+
+        console.log("Traversing Array using (forof loop)")
+        for (const element of array) {
+            console.log(element)
+        }        
+
+        console.log("Using Map Function with Array")
+        console.log("Original Array")
+        let arr1=[1,2,3]
+        console.log(arr1)
+        function sq(a){
+            return a*a;
+        }
+        console.log("New Array wrt Map Function")
+        let arrnew = arr1.map(sq)
+
+        console.log(arrnew)
+    </script>
+</head>
+<body>
+    <h1>Arrays Methods in JavaScript</h1>
+</body>
+</html>

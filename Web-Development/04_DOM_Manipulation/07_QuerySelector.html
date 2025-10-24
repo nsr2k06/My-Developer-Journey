@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector</title>
+</head>
+<body>
+    <div class="container">
+            <div id="BOX1" class="box">Box1</div>
+            <div class="box">Box2</div>
+            <div class="box">Box3</div>
+            <button onclick="magic()">Do the Magic</button>
+    </div>
+
+    <script>
+        function magic(){
+            console.log("querySelector")
+            let elems=document.querySelector(".box")
+            console.log(elems)
+
+            console.log("querySelectorAll")
+            let elemss=document.querySelectorAll(".box")
+            console.log(elemss)
+
+        }
+    </script>
+
+</body>
+</html>
